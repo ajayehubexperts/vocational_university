@@ -7,12 +7,12 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+      window.scrollY > 800 ? setSticky(true) : setSticky(false);
     });
   }, []);
 
   return (
-    <nav className="container">
+    <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} alt="" className="logo" />
       <ul>
         <li>Home</li>
