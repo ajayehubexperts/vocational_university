@@ -39,8 +39,8 @@ const Testimonials = () => {
               <div className="user-info">
                 <img src={user_1} alt="" />
                 <div>
-                  <h3>William Jackson 1</h3>
-                  <span>Vocational, INDIA</span>
+                  <h3>Ankansha Tripathi</h3>
+                  <span>Conestoga College, CANADA</span>
                   <p>
                     Choosing to pursue my degree at Edusity was one of the best
                     decisions I've ever made. The supportive community,
@@ -56,7 +56,7 @@ const Testimonials = () => {
               <div className="user-info">
                 <img src={user_2} alt="" />
                 <div>
-                  <h3>William Jackson 2</h3>
+                  <h3>Sahil Kapadiya</h3>
                   <span>Vocational, INDIA</span>
                   <p>
                     Choosing to pursue my degree at Edusity was one of the best
@@ -73,8 +73,8 @@ const Testimonials = () => {
               <div className="user-info">
                 <img src={user_3} alt="" />
                 <div>
-                  <h3>William Jackson 3</h3>
-                  <span>Vocational, INDIA</span>
+                  <h3>Rylan Renner</h3>
+                  <span>Windsor, CANADA</span>
                   <p>
                     Choosing to pursue my degree at Edusity was one of the best
                     decisions I've ever made. The supportive community,
