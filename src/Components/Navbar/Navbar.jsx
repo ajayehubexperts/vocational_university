@@ -6,7 +6,7 @@ import menu_icon from "../../assets/menu-icon.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
-  const [mobileMenu, , setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
