@@ -1,6 +1,5 @@
-nav {
+nav.navbar {
   width: 100%;
-  /* background: #333; */
   color: #fff;
   padding: 4px 0;
   position: fixed;
@@ -9,28 +8,38 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s ease-in-out;
 }
+
 .logo {
   width: 180px;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul.nav-links {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
   margin: 5px 20px;
   font-size: 16px;
 }
+
 .dark-nav {
   background: #212ea5;
-  transition: 0.5s;
 }
 
 .menu-icon {
   display: none;
+  width: 30px;
+  cursor: pointer;
 }
-/* ------ media query ------- */
 
+/* Mobile Styles */
 @media (max-width: 1000px) {
   .logo {
     width: 140px;
@@ -39,31 +48,39 @@ nav ul li {
     margin: 10px 15px;
   }
 }
+
 @media (max-width: 840px) {
   nav {
     padding: 15px 0;
   }
-  nav ul {
+
+  nav ul.nav-links {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     background: #212ea5;
-    z-index: -1;
     width: 200px;
-    padding-top: 70px;
-    transition: 0.5s;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 80px;
+    padding-left: 20px;
+    transition: right 0.3s ease-in-out;
   }
+
+  nav ul.nav-links.hide-mobile-menu {
+    right: -220px;
+  }
+
+  nav ul.nav-links.show {
+    right: 0;
+  }
+
   nav ul li {
-    display: block;
-    margin: 25px 40px;
+    margin: 20px 0;
   }
+
   .menu-icon {
     display: block;
-    width: 30px;
-    cursor: pointer;
-  }
-  .hide-mobile-menu {
-    right: -200px;
   }
 }
